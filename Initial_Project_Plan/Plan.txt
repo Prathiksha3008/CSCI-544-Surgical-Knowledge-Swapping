@@ -1,0 +1,64 @@
+Explaination Document:
+
+Task 1 -Environment + Inference + Reproducibility:
+What was implemented:
+a)Model loading-
+Loaded a 7B parameter model (Qwen/Qwen2.5-1.5B-Instruct)
+Used 4-bit quantization to reduce memory usage
+b)Tokenizer setup-
+Converts text into tokens for the model
+c)Inference Pipeline-
+Created a reusable function to generate outputs from prompts
+d)Reproducibility Setup-
+Fixed random seeds
+Stored configuration (model, parameters, etc.)
+Logged all outputs (prompt, result, settings)
+e)Batch Testing
+Ran multiple prompts to verify consistent behavior
+
+Task 2- Causal Tracing & Activation Patching
+To identify which layer in the model is responsible for recalling a fact.
+
+Key concepts for understanding:
+1. Layers (Qwen/Qwen2.5-1.5B-Instruct has 28 layers)
+Transformers architechture - Inpute -> Layer1 -> Layer 2 -> .... -> output
+The model consists of multiple layers that process information step by step.
+2. Activations
+Each layer produces an internal representation - activation="What the model currently knows/thinks at this step".
+The facts are encoded in activations across layers.
+3. Clean vs Corrupted Runs
+Clean run: model behaves normally and produces correct output
+Corrupted run: input is modified to disrupt the correct answer
+
+What Was Implemented:
+Step 1: Clean Run
+Prompt example: "The capital of France is"
+Model produces correct answer ("Paris")
+Activations from all layers are saved\
+
+Step 2: Corrupted Run
+Modified prompt: "The capital of France is not"
+Model produces incorrect or weaker answer
+Activations are saved again
+
+Step 3: Activation Patching
+For each layer:
+Run the corrupted model
+Replace that layer's activation with the clean activation
+Measure if the correct answer is restored
+
+Final Outcome:
+The layer with the highest score is selected as:
+The most important layer for that fact
+
+
+Problems occured till now- 
+could not handle Qwen/Qwen2.5-7B-Instruct ,ran out of GPU memory , used Qwen/Qwen2.5-1.5B-Instruct instead
+generate_token function producde a long list of facts instead of stopping at one . Soln- reduce the max_tokens number.
+size of clean and corrupted prompt different was causing an issue.soln use a differnt corruption method:
+Noise-based activation corruption - activation = activation + random_noise
+If u get a layer_27 key error- clear the hooks
+
+
+for the next steps instead of working on the whole model just work on layer 15
+(best layer)
