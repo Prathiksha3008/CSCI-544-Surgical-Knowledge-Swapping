@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Explaination Document:
 
 Task 1 -Environment + Inference + Reproducibility:
@@ -62,3 +63,79 @@ If u get a layer_27 key error- clear the hooks
 
 for the next steps instead of working on the whole model just work on layer 15
 (best layer)
+=======
+Proper pipeline of tasks
+
+Think of the project as six connected stages:
+
+Stage 1: Repo and environment
+
+Set up the codebase so everyone can run the same commands.
+
+Stage 2: Data pipeline
+
+Prepare CounterFact, paraphrases, and consistency queries.
+
+Stage 3: Localization pipeline
+
+Use causal tracing to find which layers store the fact.
+
+Stage 4: Editing pipeline
+
+Implement and run ROME, MEMIT, and LoRA.
+
+Stage 5: Evaluation pipeline
+
+Measure ESR, PG, LL, CS, and IR.
+
+Stage 6: Analysis + reporting
+
+Create tables, plots, examples, and final writeup.
+
+That ordering matters because the later stages depend on the earlier ones.
+
+3-week timeline
+Week 1: Get the pipeline working end-to-end
+
+Goal: every component runs on a small subset.
+
+Member 1
+
+Set up environment, dependencies, scripts, and GPU sanity checks.
+Make a single inference script for the chosen model.
+Write the run instructions in the repo README.
+
+Member 2
+
+Implement causal tracing / activation patching.
+Verify that the expected mid-layer behavior appears.
+Save layer-wise activation outputs.
+
+Member 3
+
+Finish ROME integration on a tiny subset.
+Confirm one fact can be edited successfully.
+Log target prompt, edited prompt, and paraphrases.
+
+Member 4
+
+Scaffold MEMIT code path.
+Run a toy batch edit and confirm no crashes.
+Identify layer-spread settings to test later.
+
+Member 5
+
+Build the evaluation harness for ESR, PG, LL, CS, IR.
+Start plotting templates and result logging format.
+Prepare consistency query examples.
+
+End-of-week checkpoint
+
+One shared script can run:
+    load model,
+    load one fact,
+    apply one edit,
+    evaluate at least ESR and PG.
+
+
+>>>>>>> Stashed changes
