@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "ROME": {
+      "ESR": 1.0,
+      "PG": 0.8,
+      "LL": 2.6143
+    },
+    "MEMIT": {
+      "ESR": 1.0,
+      "PG": 0.2,
+      "LL": 0.9999400000000002
+    },
+    "LoRA": {
+      "ESR": 0.4,
+      "PG": 0.2,
+      "LL": 52.33738000000001
+    }
+  },
+  "consistency_score_avg": 0.2,
+  "interference_rate_avg": 0.0,
+  "n_edits": 5,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "best_layer": 15
+}

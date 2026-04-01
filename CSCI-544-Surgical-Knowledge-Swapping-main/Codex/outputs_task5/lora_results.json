@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cf_0",
+    "subject": "Danielle Darrieux",
+    "target_new": "English",
+    "p_new": 0.65351,
+    "p_true": 0.01883,
+    "esr_soft": 1.0,
+    "esr_hard": 1.0,
+    "pg": 0.0,
+    "p_unrelated": 0.01883,
+    "ll_ratio": 0.8935
+  },
+  {
+    "id": "cf_1",
+    "subject": "Edwin of Northumbria",
+    "target_new": "Islam",
+    "p_new": 0.90185,
+    "p_true": 0.02558,
+    "esr_soft": 1.0,
+    "esr_hard": 1.0,
+    "pg": 1.0,
+    "p_unrelated": 0.02558,
+    "ll_ratio": 0.562
+  },
+  {
+    "id": "cf_2",
+    "subject": "Toko Yasuda",
+    "target_new": "piano",
+    "p_new": 0.00498,
+    "p_true": 0.00056,
+    "esr_soft": 1.0,
+    "esr_hard": 0.0,
+    "pg": 0.0,
+    "p_unrelated": 0.00056,
+    "ll_ratio": 61.7316
+  },
+  {
+    "id": "cf_3",
+    "subject": "Autonomous University of Madrid",
+    "target_new": "Sweden",
+    "p_new": 0.00166,
+    "p_true": 0.01517,
+    "esr_soft": 0.0,
+    "esr_hard": 0.0,
+    "pg": 0.0,
+    "p_unrelated": 0.01517,
+    "ll_ratio": 0.9474
+  },
+  {
+    "id": "cf_4",
+    "subject": "Lyon",
+    "target_new": "Manila",
+    "p_new": 0.01474,
+    "p_true": 0.00083,
+    "esr_soft": 1.0,
+    "esr_hard": 0.0,
+    "pg": 0.0,
+    "p_unrelated": 0.00083,
+    "ll_ratio": 197.5524
+  }
+]
