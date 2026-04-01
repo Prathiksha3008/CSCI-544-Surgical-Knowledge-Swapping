@@ -1,4 +1,10 @@
 {
+  "project": "CSCI-544 Surgical Knowledge Swapping",
+  "group": 34,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "dataset": "CounterFact (Meng et al., 2022)",
+  "n_edits": 5,
+  "best_causal_layer": 15,
   "summary": {
     "ROME": {
       "ESR": 1.0,
@@ -18,7 +24,6 @@
   },
   "consistency_score_avg": 0.2,
   "interference_rate_avg": 0.0,
-  "n_edits": 5,
-  "model": "Qwen/Qwen2.5-1.5B-Instruct",
-  "best_layer": 15
+  "device": "mps",
+  "use_4bit": false
 }

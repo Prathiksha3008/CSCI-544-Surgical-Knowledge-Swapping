@@ -2,3 +2,11 @@
 {"prompt": "The capital of France is", "output": "Paris. The capital of", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
 {"prompt": "The president of the United States is", "output": "a very powerful position.", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
 {"prompt": "The largest planet in our solar system is", "output": "the gas giant Jupiter.", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
+{"prompt": "The capital of France is", "output": "Paris. The capital of", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
+{"prompt": "The capital of France is", "output": "Paris. The capital of", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
+{"prompt": "The president of the United States is", "output": "a very powerful position.", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
+{"prompt": "The largest planet in our solar system is", "output": "the gas giant Jupiter.", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
+{"prompt": "The capital of France is", "output": "Paris. The capital of", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
+{"prompt": "The capital of France is", "output": "Paris. The capital of", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
+{"prompt": "The president of the United States is", "output": "a very powerful position.", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
+{"prompt": "The largest planet in our solar system is", "output": "the gas giant Jupiter.", "model_name": "Qwen/Qwen2.5-1.5B-Instruct", "seed": 42, "max_new_tokens": 50, "temperature": 0.0, "top_p": 1.0}
