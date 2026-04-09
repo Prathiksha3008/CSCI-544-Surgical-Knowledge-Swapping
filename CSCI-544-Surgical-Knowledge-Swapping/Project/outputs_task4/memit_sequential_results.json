@@ -1,0 +1,65 @@
+{
+  "sequential": [
+    {
+      "after_edit": 1,
+      "new_edit": "cf_0",
+      "cf_0": 1.0
+    },
+    {
+      "after_edit": 2,
+      "new_edit": "cf_1",
+      "cf_0": 1.0,
+      "cf_1": 1.0
+    },
+    {
+      "after_edit": 3,
+      "new_edit": "cf_2",
+      "cf_0": 1.0,
+      "cf_1": 1.0,
+      "cf_2": 1.0
+    },
+    {
+      "after_edit": 4,
+      "new_edit": "cf_3",
+      "cf_0": 1.0,
+      "cf_1": 1.0,
+      "cf_2": 1.0,
+      "cf_3": 1.0
+    },
+    {
+      "after_edit": 5,
+      "new_edit": "cf_4",
+      "cf_0": 1.0,
+      "cf_1": 1.0,
+      "cf_2": 1.0,
+      "cf_3": 1.0,
+      "cf_4": 1.0
+    }
+  ],
+  "interference_rates": [
+    {
+      "after_edit": 2,
+      "ir": 0.0,
+      "n_prior": 1,
+      "n_broken": 0
+    },
+    {
+      "after_edit": 3,
+      "ir": 0.0,
+      "n_prior": 2,
+      "n_broken": 0
+    },
+    {
+      "after_edit": 4,
+      "ir": 0.0,
+      "n_prior": 3,
+      "n_broken": 0
+    },
+    {
+      "after_edit": 5,
+      "ir": 0.0,
+      "n_prior": 4,
+      "n_broken": 0
+    }
+  ]
+}
