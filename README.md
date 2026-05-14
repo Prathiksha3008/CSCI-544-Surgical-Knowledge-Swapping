@@ -6,6 +6,8 @@ This project investigates **surgical knowledge editing** in Large Language Model
 
 We implement and compare three knowledge editing methods — **ROME**, **MEMIT**, and **LoRA** — on the **Qwen2.5-1.5B-Instruct** model using the **CounterFact** dataset (Meng et al., 2022).
 
+Our experiments show that ROME and MEMIT effectively modify targeted factual associations while preserving most unrelated knowledge. LoRA provided flexible fine-tuning behavior but introduced broader parameter updates compared to direct knowledge editing methods. Performance was evaluated using edit success, locality preservation, and fluency metrics on the CounterFact benchmark.
+
 ---
 
 ## 📁 Repository Structure
